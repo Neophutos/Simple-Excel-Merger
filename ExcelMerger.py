@@ -11,7 +11,7 @@ for file in os.listdir(data_file_folder):
         print('Loading file {0}...'.format(file))
 
         # Enter the name of the sheet you want to merge in sheet_name
-        data_file.append(pd.read_excel(os.path.join(data_file_folder, file), sheet_name='Enter name of the sheet'))
+        data_file.append(pd.read_excel(os.path.join(data_file_folder, file), sheet_name='Data'))
 
 data_file_master = pd.concat(data_file, axis=0)
 
